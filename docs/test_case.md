@@ -1,0 +1,51 @@
+- [x] use support controller to create vault
+    - assert
+        - [x] createVault run correctly
+            - [x] can use createVault function to create vault
+            - [o] emit `NewVault` with proper args
+        - [x] vault create correctly
+            - [x] the controller of vault is support controller
+            - [x] the creator of vault is the function caller
+- [x] deposit
+    - [x] user can't direct deposit to Vault
+    - [x] use support controller to deposit
+        - [x] deposit function success
+        - [x] the all number is correct
+            - [x] user
+                - [x] denominated token balance
+                - [x] share balance
+            - [x] contract
+                - [x] balance
+                - [x] share total supply
+    - [x] multiple person deposit
+        - [x] the all number is correct
+            - [x] user
+                - [x] denominated token balance
+                - [x] share balance
+                - [x] reserveBalance
+            - [x] contract
+                - [x] balance
+                - [x] share total supply
+
+- [x] use support controller to withdraw
+    - [x] can't withdraw by non-controller account
+    - [x] user use support controller to withdraw
+        - [x] withdraw function success
+        - [x] the all number is correct
+            - [x] user
+                - [x] denominated token balance
+                - [x] share balance
+            - [x] contract
+                - [x] balance
+                - [x] share total supply
+                - [x] 
+- [x] use support controller to claim
+    - [x] can't claim by non-controller account
+    - [x] creator use support controller to claim
+        - [x] claim function success
+        - [x] the all number is correct
+            - [x] creator
+                - [x] denominated token balance
+            - [x] contract
+                - [x] balance
+                - [x] reserveBalance
